@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour {
 
         int randomEnemySelect = Random.Range(0, enemyTypes.Length);
 
-        Transform enemyTransform = Instantiate(enemyTypes[randomEnemySelect], position, Quaternion.identity);
+        Transform enemyTransform = Instantiate(enemyPf, position, Quaternion.identity);
 
         Enemy enemy = enemyTransform.GetComponent<Enemy>();
         enemy.SetRandomMoveSpeed();

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Cinemachine;
-using UnityEditor.ShaderGraph.Internal;
 
 public class WeaponManager : MonoBehaviour {
 

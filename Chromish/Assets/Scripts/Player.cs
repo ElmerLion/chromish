@@ -77,6 +77,10 @@ public class Player : MonoBehaviour
             mouseWorldPosition = hit.point;
         }
 
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            Application.Quit();
+        }
+
     }
     private void HandleCameraRotation() {
         Vector2 inputVector = gameInput.GetMovementVectorNormalized();
